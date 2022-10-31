@@ -2,19 +2,10 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
-import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
-import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
-
-import { CgFileDocument } from "react-icons/cg";
+import { AiOutlineHome } from "react-icons/ai";
+import { BsBookFill, BsMapFill } from "react-icons/bs";
+import { CgFileDocument, CgWebsite } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -65,7 +56,7 @@ function NavBar() {
                 to="/maps"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> Maps
+                <BsMapFill style={{ marginBottom: "2px" }} /> Maps
               </Nav.Link>
             </Nav.Item>
 
@@ -75,7 +66,7 @@ function NavBar() {
                 to="/pathfinder_2e"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
+                <BsBookFill
                   style={{ marginBottom: "2px" }}
                 />{" "}
                 Pathfinder 2e
@@ -98,7 +89,7 @@ function NavBar() {
                 target="_blank"
                 rel="noreferrer"
               >
-                <ImBlog style={{ marginBottom: "2px" }} /> The website for your books
+                <CgWebsite style={{ marginBottom: "2px" }} /> The website for your books
               </Nav.Link>
             </Nav.Item>
 
