@@ -13,13 +13,13 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
-                Hi There!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
+              <h1 style={{ paddingBottom: 25 }} className="heading">
+                Flare makes books
+                {/* <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
-                </span>
+                </span> */}
               </h1>
-
+{/* 
               <h1 className="heading-name">
                 I'M
                 <strong className="main-name"> SOUMYAJIT BEHERA</strong>
@@ -27,7 +27,7 @@ function Home() {
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
-              </div>
+              </div> */}
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
